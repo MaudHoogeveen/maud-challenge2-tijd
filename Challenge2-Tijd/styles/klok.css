@@ -1,0 +1,152 @@
+
+
+body{
+    background-color: #252B3E; 
+    
+}
+
+
+h1 {
+    font-size: 100px;
+    position: relative;
+    font-family: 'open sans', sans-serif;
+    letter-spacing: 10px;
+    color: #AE7856; 
+    text-align: center;
+    text-shadow: 2px 2px #000;
+}
+
+span{
+    color: #5C9BEB;  
+    font-size: 120px;  
+}
+
+
+#txt {
+  color: white; 
+  font-family: 'open sans', sans-serif;
+  font-size: 60px; 
+  min-width: 300px;
+  max-width: 700px; 
+  margin: auto;
+  margin-top:-20px; 
+  background-color:#393D51;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #000;
+  justify-content: center;
+  
+}
+
+.raket{
+  animation: yo 10s infinite linear;
+  width: 60px;
+  transform: rotate(90deg);
+
+}
+@keyframes yo{
+  from{margin-left: -100vw;}
+  to{margin-left: 100vw;}
+
+}
+
+.responsive{
+    width: 100%; 
+    height: auto;
+    
+}
+
+
+h2{
+    font-size: 50px;
+    position: relative;
+    font-family: 'open sans', sans-serif;
+    color: #fff; 
+    text-align: center;
+  }
+
+#dagMaand{
+      font-size: 40px; 
+      text-align: center; 
+      color: #fff; 
+      font-family: 'open sans', 'sans-serif'; 
+      text-transform: capitalize; 
+      margin-top: -30px;
+      margin-bottom: -40px;  
+
+  }
+
+h3{
+    font-size: 40px; 
+    text-align: center; 
+    color: #fff; 
+    font-family: 'open sans', 'sans-serif'; 
+    font-weight: lighter;
+  }
+
+
+/*Hieronder code die Fedor heeft toegevoegd*/
+
+#maanbox { /*een div die om jouw plaatje heen zit*/
+    height: 40vw; /*die div zeg je met 50vw dat hij niet hoger mag zijn dan de helft van de breedte. Waardoor je als het goed is een halve cirkel krijgt*/
+
+    overflow: hidden; /*dit betekent dat hij niet het deel van het plaatje mag laten zien dat buiten de div komt*/
+  }
+
+.dag {
+  color: white;
+  background-color: #5C9BEB;
+}
+
+.dag span{
+  color: #252B3E; 
+}
+
+.dag #txt{
+  background-color: #91BDF5; 
+}
+
+.nacht {
+  color: white;
+  background-color: #252B3E; 
+}
+
+.nacht span{
+  color:  #5C9BEB;
+}
+
+.nacht #txt{
+  background-color: #393D51; 
+}
+
+/* media quries verandering in schermen */
+@media only screen and (min-width: 768px){
+  h1{
+      font-size: 75px; 
+  }
+
+  #dagMaand, h3{
+      font-size: 30px;
+  }
+
+  #txt{
+      font-size: 70px; 
+      padding: 20px;
+  }
+    
+  
+  @media only screen and (min-width: 1024px){
+
+    #maanbox{
+      height: 20vw; 
+    }
+        
+  }
+
+  @media only screen and (min-width: 1440px){
+
+  h1{
+    font-size: 100px; 
+    margin-top: 10px; 
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Date</title>
+		<link rel="stylesheet" href="styles/klok.css">
+        <script src="scripts/klok.js"defer></script>
+        <script  src="scripts/datum.js"defer ></script>
+	</head>
+    <body onload="startTime()" id="main"> <!-- om dag en nacht te wisselen-->
+
+			<h1 id="clock">
+				Space<span>X</span>
+            </h1>
+        
+        <div id="dagMaand"></div>
+        <h3> De tijd is: </h3>
+        
+            <h2 id="clock"> 
+            </h2>
+        </div>
+        <!-- raketje wat door de pagina gaat-->
+        <img src="images/raket.png" alt="raket" class="raket" />
+
+        <!-- de klok zelf-->
+        <div id="txt">
+
+        <div id="hours"></div>
+        <div id="minutes"></div>
+        <div id="seconds"></div>
+        </div>
+        <div id="maanbox"> <!-- om de maan afgesneden onder aan de pagina te krijgen-->
+            <img id="zonMaanImg" src="images/maan.png" class='responsive' > 
+        </div>
+        
+   
+	</body>
+</html>
